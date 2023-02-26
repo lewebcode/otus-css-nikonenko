@@ -21,11 +21,36 @@
     line-height: 1.2;
 }
 
-.banner__title,.section_title{
+.banner__title,.section_subtitle{
     font-family: 'Butler';
     font-weight: 400;
+    font-size: 87px;
 }
 
-.banner__subtitle,.section_subtitle{
+.banner__subtitle,.section_title{
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.biography__text{
+    font-size: 1.125rem;
+    font-weight: 500;
+    color:#636363;
+}
+
+.blockquote{
+    font-family: 'Butler';
+    font-size: 2rem;
+}
+
+
+.designers__item .designers__item-name{
+    text-transform: uppercase;
+    font-size: 1.17rem;
+}
+.designers__item .designers__item-text{
+    font-size: 1.17rem;
+}
+.designers__item .designers__item-text--bold{
     font-weight: 700;
 }

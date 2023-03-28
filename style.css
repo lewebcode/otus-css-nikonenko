@@ -37,16 +37,25 @@ body{
 .nav__content{
     display: none;
 }
+
 /*navigation*/
 .nav__item{
     color:#000;
     font-weight: 400;
     text-decoration: none;
 }
+
 .wrapper{
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 1170px;
 }
+
+.blockquote{
+    font-family: 'Butler';
+    font-size: 2rem;
+    margin: 0;
+}
+
 .banner{
     padding-left: 55px;
     height: 630px;
@@ -58,10 +67,10 @@ body{
     position: absolute;
     z-index: 2;
     top: 22%;
-    left: 26.3%;
+    left: 28%;
     margin: 0 auto;
     text-align: center;
-    width: 47.4%;
+    width: 44%;
 }
 
 .banner img{
@@ -91,16 +100,30 @@ body{
     font-size: 1.125rem;
 }
 
-.biography__text{
+/*biography block*/
+.biography{
+    margin-top: 135px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.biography .biography__picture{
+    width: 100%;
+    max-width: 47.4%; 
+}
+.biography .biography__content{
+    width: 100%;
+    max-width: 37.5%;
+    display: flex;
+    flex-flow: column;
+}
+.biography .biography__text{
     font-size: 1.125rem;
     font-weight: 500;
     color:#636363;
 }
 
-.blockquote{
-    font-family: 'Butler';
-    font-size: 2rem;
-}
 
 /*designers block*/
 .designers__item .designers-item__name{

@@ -114,14 +114,19 @@ body{
 }
 .biography .biography__content{
     width: 100%;
-    max-width: 37.5%;
+    max-width: 40.6%;
     display: flex;
     flex-flow: column;
 }
-.biography .biography__text{
+.biography .biography__content .section_title{
+    transform: rotate(90deg) translateY(-290px);
+    text-align: right;
+}
+.biography .biography__content .biography__text{
     font-size: 1.125rem;
     font-weight: 500;
     color:#636363;
+    margin: 0;
 }
 
 

@@ -54,6 +54,7 @@ body{
     font-family: 'Butler';
     font-size: 2rem;
     margin: 0 0 30px 0;
+    width: 90%;
 }
 
 .banner{
@@ -147,23 +148,41 @@ body{
 
 /*designers block*/
 .designers{
-    margin-top: 135px;
+    margin-top: 115px;
+}
+.designers .section_title{
+    text-align: center;
+    width: 57.6%;
+    float: right;
+    transform: rotate(270deg) translateX(-64px);
 }
 .designers .designers__content{
     display: flex;
     align-items: flex-end;
-    gap :10px;
+    gap: 15px;
+    flex-flow: row nowrap;
+    width: 100vw;
+}
+.designers .designers__content .designers__item{
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+    max-width: 21.5%;
+    order: 2;
 }
 .designers .designers__content .designers__item.big{
-    margin-right: 100px;
+    order: 1;
+    margin-right: 7%;
+    align-items: center;
+    max-width: 42.3%;
+    overflow: hidden;
 }
 .designers__item .designers-item__name{
     text-transform: uppercase;
-    font-size: 1.17rem;
     margin-bottom: 0;
+    line-height: 1;
 }
 .designers__item .designers-item__text{
-    font-size: 1.17rem;
     margin: 0;
 }
 .designers__item .designers-item__text--bold{

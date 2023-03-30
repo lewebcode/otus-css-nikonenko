@@ -95,7 +95,9 @@ body{
     font-size: 87px;
     margin-bottom: 0;
 }
-
+.section_subtitle{
+    margin-top: 0;
+}
 .banner__subtitle,.section_title{
     font-weight: 700;
     font-size: 1.125rem;
@@ -162,6 +164,7 @@ body{
 }
 .designers__item .designers-item__text{
     font-size: 1.17rem;
+    margin: 0;
 }
 .designers__item .designers-item__text--bold{
     font-weight: 700;

@@ -23,7 +23,6 @@
 main{
     margin: 0 auto;
     max-width: 1440px;
-    padding: 0px 30px;
     overflow-x: hidden;
 }
 body{
@@ -145,9 +144,21 @@ body{
 }
 
 /*designers block*/
+.designers{
+    margin-top: 135px;
+}
+.designers .designers__content{
+    display: flex;
+    align-items: flex-end;
+    gap :10px;
+}
+.designers .designers__content .designers__item.big{
+    margin-right: 100px;
+}
 .designers__item .designers-item__name{
     text-transform: uppercase;
     font-size: 1.17rem;
+    margin-bottom: 0;
 }
 .designers__item .designers-item__text{
     font-size: 1.17rem;

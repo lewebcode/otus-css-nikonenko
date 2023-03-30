@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Mod Studio</title>
 </head>
@@ -12,16 +15,25 @@
 <main>
 
     <nav class="nav">
-        <a class="nav__item" href="#biography">Biography</a>
-        <a class="nav__item" href="#designers">Designers</a>
-        <a class="nav__item" href="#testimonials">Testimonials</a>
-        <a class="nav__item" href="#strongpoints">Strong points</a>
+        <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="34" y2="0.5" stroke="black"/>
+            <line y1="7.5" x2="34" y2="7.5" stroke="black"/>
+            <line y1="15.5" x2="34" y2="15.5" stroke="black"/>
+         </svg>    
+        <div class="nav__content">
+            <a class="nav__item" href="#biography">Biography</a>
+            <a class="nav__item" href="#designers">Designers</a>
+            <a class="nav__item" href="#testimonials">Testimonials</a>
+            <a class="nav__item" href="#strongpoints">Strong points</a>
+        </div>
     </nav>
 
-   <section class="banner">
+   <section class="banner wrapper">
         <img src="img/modstuido.png" alt="Mod Studio">
-        <h1 class="banner__title">Mod Studio</h1>
-        <h2 class="banner__subtitle">Modern Web Studio</h2>
+        <div class="banner__content">
+            <h1 class="banner__title">Mod Studio</h1>
+            <h2 class="banner__subtitle">Modern Web Studio</h2>
+        </div>
    </section>
 
    <section id="biography" class="biography">

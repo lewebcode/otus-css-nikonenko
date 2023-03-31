@@ -23,6 +23,7 @@
 main{
     margin: 0 auto;
     max-width: 1440px;
+    padding: 0px 30px;
     overflow-x: hidden;
 }
 body{
@@ -37,18 +38,27 @@ body{
 .nav__content{
     display: none;
 }
+
 /*navigation*/
 .nav__item{
     color:#000;
     font-weight: 400;
     text-decoration: none;
 }
+
 .wrapper{
     margin: 0 auto;
-    max-width: 1120px;
+    max-width: 1170px;
 }
+
+.blockquote{
+    font-family: 'Butler';
+    font-size: 2rem;
+    margin: 0 0 30px 0;
+}
+
 .banner{
-    padding-left: 55px;
+    padding-left: 7.3%;
     height: 630px;
     position: relative;
 }
@@ -58,10 +68,10 @@ body{
     position: absolute;
     z-index: 2;
     top: 22%;
-    left: 26.3%;
+    left: 28%;
     margin: 0 auto;
     text-align: center;
-    width: 47.4%;
+    width: 44%;
 }
 
 .banner img{
@@ -73,7 +83,7 @@ body{
 .banner .banner__title{
     margin-bottom: 18px;
     margin-top: 120px;
-    padding: 0px 60px;
+    padding: 0px 15px;
 }
 
 .banner__subtitle{
@@ -84,22 +94,56 @@ body{
     font-family: 'Butler';
     font-weight: 400;
     font-size: 87px;
+    margin-bottom: 0;
 }
-
+.section_subtitle{
+    margin-top: 0;
+}
 .banner__subtitle,.section_title{
     font-weight: 700;
     font-size: 1.125rem;
 }
 
-.biography__text{
+/*biography block*/
+.biography{
+    margin-top: 135px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.biography .biography__picture{
+    width: 100%;
+    max-width: 47.4%; 
+}
+.biography .biography__content{
+    width: 100%;
+    max-width: 40.6%;
+    display: flex;
+    flex-flow: column;
+    gap: 47px;
+}
+.biography .biography__content .section_title{
+    transform: rotate(270deg) translateX(-470px) translateY(21vw);
+    text-align: left;
+    transform-origin: bottom;
+}
+.biography .biography__content .biography__text{
     font-size: 1.125rem;
     font-weight: 500;
     color:#636363;
+    margin-bottom: 15px;
 }
-
-.blockquote{
-    font-family: 'Butler';
-    font-size: 2rem;
+.biography .biography__content .biography__text p{
+    margin: 0;
+}
+.biography .biography__content .blockquote::before{
+    content: ' ';
+    display: block;
+    height: 4px;
+    width: 14px;
+    background-color: #000;
+    margin-bottom: 25px;
 }
 
 /*designers block*/

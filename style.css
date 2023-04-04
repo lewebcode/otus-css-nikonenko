@@ -148,13 +148,15 @@ body{
 
 /*designers block*/
 .designers{
-    margin-top: 115px;
+    position: relative;
+    margin-top: 165px;
 }
 .designers .section_title{
-    text-align: center;
-    width: 57.6%;
-    float: right;
-    transform: rotate(270deg) translateX(-64px);
+    width: fit-content;
+    position: absolute;
+    right: 25.8%;
+    writing-mode: rl-tb;
+    transform: rotate(270deg) translateX(-15px);
 }
 .designers .designers__content{
     display: flex;

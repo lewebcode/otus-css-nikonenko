@@ -152,7 +152,7 @@ body{
     margin-top: 165px;
 }
 .designers .section_title{
-    width: fit-content;
+    width: 85px;
     position: absolute;
     right: 25.8%;
     writing-mode: rl-tb;

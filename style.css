@@ -23,7 +23,6 @@
 main{
     margin: 0 auto;
     max-width: 1440px;
-    padding: 0px 30px;
     overflow-x: hidden;
 }
 body{
@@ -55,6 +54,7 @@ body{
     font-family: 'Butler';
     font-size: 2rem;
     margin: 0 0 30px 0;
+    width: 90%;
 }
 
 .banner{
@@ -147,12 +147,45 @@ body{
 }
 
 /*designers block*/
+.designers{
+    position: relative;
+    margin-top: 165px;
+}
+.designers .section_title{
+    width: 85px;
+    position: absolute;
+    right: 25.8%;
+    writing-mode: rl-tb;
+    transform: rotate(270deg) translateX(-15px);
+}
+.designers .designers__content{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    flex-flow: row nowrap;
+    width: 100vw;
+}
+.designers .designers__content .designers__item{
+    display: flex;
+    flex-flow: column;
+    gap: 7px;
+    max-width: 21.5%;
+    order: 2;
+}
+.designers .designers__content .designers__item.big{
+    order: 1;
+    margin-right: 7%;
+    align-items: center;
+    max-width: 42.3%;
+    overflow: hidden;
+}
 .designers__item .designers-item__name{
     text-transform: uppercase;
-    font-size: 1.17rem;
+    margin-bottom: 0;
+    line-height: 1;
 }
 .designers__item .designers-item__text{
-    font-size: 1.17rem;
+    margin: 0;
 }
 .designers__item .designers-item__text--bold{
     font-weight: 700;

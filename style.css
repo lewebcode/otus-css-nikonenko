@@ -165,7 +165,8 @@ body{
 /*designers block*/
 .designers{
     position: relative;
-    margin: 165px 0;
+    margin: 165px auto;
+    max-width: 1440px;
 }
 .designers .section_title{
     width: 85px;
@@ -220,6 +221,8 @@ body{
 /*testimonials block*/
 .testimonials{
     padding-top: 85px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .testimonials .section_title{
     padding-left: 85px;
@@ -275,38 +278,30 @@ body{
 }
 /*strongpoints block*/
 .strongpoints{
-    position: relative;
     margin-top: 115px;
+    display: grid;
+    gap: 29px 19px;
+    grid-template-rows: 130px 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, minmax(350px, 1fr)) minmax(577px, 1fr) minmax(350px, 1fr);
 }
 .strongpoints .section_title{
     width: 125px;
-    position: absolute;
     left: 29.3%;
-    writing-mode: rl-tb;
-    transform: rotate(270deg) translateX(-15px);
+    grid-column: 2/3;
+    align-self: flex-start;
+    transform: rotate(270deg) translateX(-20px) translateY(50px);
 }
 .strongpoints .section_subtitle{
-    max-width: 532px;
-    margin-left: 56%;
-    padding-top: 20px;
+    align-self: end;
+    grid-column: 3/4;
+    padding-left: 72px;
 }
-.strongpoints__content{
-    margin-top: 30px;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    display: flex;
-    -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    gap: 28px;
+.strongpoints__content-item{
+    grid-row-start: 2;
 }
+
 .strongpoints__list{
-    min-width: 215px;
-    width: 100%;
-    padding-left: 9.5%;
-    padding-right: 14.5%;
-    margin-top: 0;
-    margin-bottom: 0;
     list-style-type: none;
     -webkit-display: flex;
     -moz-display: flex;
@@ -315,6 +310,8 @@ body{
     flex-flow: column;
     -webkit-justify-content: center;
     justify-content: center;
+    padding-left: 25.2%;
+    margin-top: 30px;
 }
 .strongpoints__list-item{
     font-family: 'Butler';

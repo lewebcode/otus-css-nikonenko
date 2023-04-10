@@ -279,6 +279,7 @@ body{
 /*strongpoints block*/
 .strongpoints{
     margin-top: 115px;
+    -ms-display: grid;
     display: grid;
     gap: 29px 19px;
     grid-template-rows: 130px 1fr;

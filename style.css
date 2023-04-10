@@ -22,8 +22,7 @@
 
 main{
     margin: 0 auto;
-    max-width: 1440px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body{
     margin: 0;

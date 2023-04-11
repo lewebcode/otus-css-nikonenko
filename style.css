@@ -57,25 +57,28 @@ body{
 .blockquote{
     font-family: 'Butler';
     font-size: 2rem;
-    margin: 0 0 30px 0;
+    margin: 0 0 35px 0;
     width: 90%;
 }
 
 .banner{
-    padding-left: 7.3%;
     height: 630px;
     position: relative;
+    max-width: 1065px;
+    margin: 0 auto;
 }
 
 .banner .banner__content{
     background-color: #fff;
     position: absolute;
     z-index: 2;
-    top: 22%;
-    left: 28%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
-    width: 44%;
+    width: 53%;
+    padding: 15px 0;
 }
 
 .banner img{
@@ -85,13 +88,13 @@ body{
 }
 
 .banner .banner__title{
-    margin-bottom: 18px;
-    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-top: 110px;
     padding: 0px 15px;
 }
 
 .banner__subtitle{
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
 .banner__title,.section_subtitle{
@@ -123,35 +126,60 @@ body{
     flex-direction: row;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
 }
 .biography .biography__picture{
     width: 100%;
-    max-width: 47.4%; 
+    max-width: 45.4%;
 }
 .biography .biography__content{
     width: 100%;
-    max-width: 40.6%;
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    display: flex;
-    -webkit-flex-flow: column;
-    flex-flow: column;
-    gap: 47px;
+    max-width: 42.6%;
+    -ms-display: grid;
+    display: grid;
+    row-gap: 37px;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: 48% 72px 1fr;
 }
 .biography .biography__content .section_title{
-    transform: rotate(270deg) translateX(-470px) translateY(21vw);
-    text-align: left;
-    transform-origin: bottom;
+    transform: rotate(270deg) translateY(35px);
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-bottom: 10px;
+    align-self: end;
+}
+.biography .biography__content .section_subtitle{
+    margin-top: 20px;
+    grid-column: 1/2;
+    align-self: end;
 }
 .biography .biography__content .biography__text{
     font-size: 1.125rem;
     font-weight: 500;
-    color:#636363;
+    color: #636363;
     margin-bottom: 15px;
+    grid-column: 1/2;
 }
 .biography .biography__content .biography__text p{
     margin: 0;
+}
+.biography .biography__content .biography__text ul{
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+.biography .biography__content .blockquote{
+    grid-column: 1/2; 
 }
 .biography .biography__content .blockquote::before{
     content: ' ';
@@ -159,7 +187,7 @@ body{
     height: 4px;
     width: 14px;
     background-color: #000;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /*designers block*/
@@ -186,6 +214,7 @@ body{
     -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
     width: 100vw;
+    padding-top: 7px;
 }
 .designers .designers__content .designers__item{
     -webkit-display: flex;
@@ -228,12 +257,12 @@ body{
     padding-left: 85px;
 }
 .testimonials .testimonials__content{
-    margin: 43px auto 0 6.83%;
-    max-width: 1252px;
-    column-gap: 30px;
+    margin: 40px auto 0 auto;
+    max-width: 1254px;
+    column-gap: 34px;
     -ms-display: grid;
     display: grid;
-    grid-template-columns: 50px 48% 47%;
+    grid-template-columns: 52px 47.5% 47%;
     grid-template-rows: 39% 1fr;
     min-height: 760px;
 }
@@ -242,6 +271,7 @@ body{
     grid-row: 1/3;
     padding-bottom: 20px;
     -ms-display: grid;
+    padding-left: 7px;
     display: grid;
     grid-template-rows: 1fr 30% 31%;
     align-items: end;
@@ -281,14 +311,13 @@ body{
     margin-top: 115px;
     -ms-display: grid;
     display: grid;
-    gap: 29px 19px;
+    gap: 25px 19px;
     grid-template-rows: 130px 1fr;
     grid-auto-flow: column;
     grid-template-columns: repeat(2, minmax(350px, 1fr)) minmax(577px, 1fr) minmax(350px, 1fr);
 }
 .strongpoints .section_title{
     width: 125px;
-    left: 29.3%;
     grid-column: 2/3;
     align-self: flex-start;
     transform: rotate(270deg) translateX(-20px) translateY(50px);

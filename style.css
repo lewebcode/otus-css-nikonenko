@@ -234,7 +234,7 @@ body{
     flex-flow: column;
     gap: 7px;
     max-width: 21.5%;
-    min-width: 270px;
+    min-width: 265px;
     order: 2;
 }
 .designers .designers__content .designers__item.big{
@@ -378,9 +378,12 @@ body{
     .testimonials__content-text{
         width: 58%;
     }
+    .strongpoints{
+        grid-template-columns: 208px repeat(3, minmax(350px, 1fr));
+    }
     .strongpoints .section_subtitle {
         align-self: end;
-        grid-column: 1/2;
+        grid-column: 1/3;
         padding-left: 72px;
     }
     .strongpoints .section_title {
@@ -398,6 +401,7 @@ body{
     .nav{
         display: none;
     }
+
     /*banner*/
     .banner{
         max-width: 100%;
@@ -420,6 +424,7 @@ body{
     .banner__title{
         font-size: 70px;
     }
+
     /*biography*/
     .biography{
         padding-left: 0;
@@ -491,21 +496,108 @@ body{
         max-width: 160px;
         overflow: hidden;
     }
+
     /*designers*/
     .designers{
         margin: 50px auto;
     }
     .designers .section_title{
-        right: 30px;
+        right: 35px;
         writing-mode: unset;
         transform: unset;
     }
     .designers .designers__content{
-        padding-left: 30px;
+        padding-left: 35px;
+        padding-top: 95px;
     }
     .designers .designers__content .designers__item.big{
         order: 3;
         margin-right: 0;
+    }
+    .designers .designers__content .designers__item{
+        gap: 2px;
+    }
+    .designers .designers__content .designers__item img{
+        aspect-ratio: 3/5;
+        max-height: 442px;
+    }
+    .designers .designers__content .designers__item:nth-child(3){
+        align-items: end;
+        min-width: 305px;
+    }
+    .designers .designers__content .designers__item:nth-child(3) img{
+        width: 100%;
+    }
+
+    /*testimonials*/
+    .testimonials{
+        margin-top: 216px;
+        padding: 0 30px;
+    }
+    .testimonials .section_title{
+        padding-left: 0;
+        text-align: right;
+        padding-right: 18px;
+    }
+    .testimonials .testimonials__content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 43px;
+        max-width: 367px;
+    }
+    .testimonials__content-links{
+        grid-row: 3/4;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        padding: 0;
+        row-gap: 50px;
+        column-gap: 40px;
+    }
+    .testimonials__link{
+        transform: unset;
+    }
+    .testimonials__content-text,
+    .testimonials__content-second_img{ 
+        grid-column: 1/2;
+    }
+    .testimonials__content-text{
+        width: 95%;
+        margin-top: 85px;
+    }
+    .testimonials__content-second_img{
+        grid-row: 2/3;
+        margin-top: 44px;
+    }
+    .testimonials__content-main_img{
+        display: none;
+    }
+    
+    /*strength points*/
+    .strongpoints{
+        padding-left: 35px;
+        gap: 0px 19px;
+    }
+    .strongpoints .section_title{
+        grid-column: 2/3;
+        transform: unset;
+        align-self: center;
+        padding-left: 12px;
+        margin-top: 0;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+    .strongpoints .section_subtitle{
+        padding-left: 0;
+        grid-row: 2/3;
+        margin-bottom: 18px;
+    }
+    .strongpoints__content-item {
+        grid-row-start: 3;
+    }
+    .strongpoints__content-item.strongpoints__list{
+        padding-left: 0;
+        margin-top: 10px;
     }
     /*footer*/
     .footer__menu{
@@ -520,13 +612,28 @@ body{
         align-items: center;
         justify-content: space-between;
         padding: 0 40px;
+        margin-top: 60px;
+        margin-bottom: 0;
         list-style-type: none;
     }
     .footer__menu .footer__menu-item{
         font-size: 2.5rem;
         font-family: 'Butler';
         font-weight: 400;
-        padding: 25px 0;
+        padding: 15px 0;
+    }
+    .footer__menu .footer__menu-item.underline{
+        position: relative;
+    }
+    .footer__menu .footer__menu-item.underline::after{
+        content: ' ';
+        position: absolute;
+        width: 23px;
+        background-color: #000;
+        height: 2px;
+        right: 0;
+        bottom: 18px;
+        display: block;
     }
     .footer__menu .footer__menu-item a{
         color: #000;

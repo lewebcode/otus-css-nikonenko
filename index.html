@@ -97,7 +97,12 @@
             </div>
             <div class="testimonials__content-main_img"><img src="img/office.png" alt="Office"></div>
             <blockquote class="blockquote testimonials__content-text">I just really want to do good work and work with some great people, people who challange me.</blockquote>
-            <div class="testimonials__content-second_img"><img src="img/testimonial1.png" alt="Testimonial1"></div>
+            <div class="testimonials__content-second_img">
+                <picture>
+                    <source srcset="img/testimonials_mobile.png" media="(max-width: 768px)" />
+                    <img src="img/testimonial1.png" alt="Testimonial1">
+                </picture> 
+            </div>
         </div>
    </section>
 
@@ -126,7 +131,7 @@
         <li class="footer__menu-item"><a href="#biography">B</a></li>
         <li class="footer__menu-item"><a href="#designers">D</a></li>
         <li class="footer__menu-item"><a href="#testimonials">T</a></li>
-        <li class="footer__menu-item"><a href="#strongpoints">S</a></li>
+        <li class="footer__menu-item underline"><a href="#strongpoints">S</a></li>
    </ul>
 </main> 
 </body>

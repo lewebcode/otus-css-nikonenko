@@ -134,6 +134,9 @@ body{
     width: 100%;
     max-width: 45.4%;
 }
+.biography .biography__picture img{
+    width: inherit;
+}
 .biography .biography__content{
     width: 100%;
     max-width: 42.6%;
@@ -423,6 +426,9 @@ body{
         -webkit-flex-flow: column-reverse;
         flex-flow: column-reverse;
     }
+    .biography .biography__picture{
+        margin-top: -10px;
+    }
     .biography .biography__picture,
     .biography .biography__content{
         max-width: 100%;
@@ -432,6 +438,7 @@ body{
         grid-auto-flow: row;
         grid-template-rows: unset;
         row-gap: 30px;
+        position: relative;
     }
     .biography .biography__content .section_title{
         transform: unset;
@@ -468,9 +475,9 @@ body{
         align-self: flex-start;
         margin-top: 0;
         font-size: 78px;
-        text-align: center;
-        padding-left: 30px;
+        -webkit-flex-flow: row;
         flex-flow: row;
+        justify-content: center;
         gap: 8px;
     }
     .biography .biography__content .section_subtitle::before{
@@ -478,10 +485,27 @@ body{
         color:#000;
         width: 25px;
         height: 5px;
+        margin-right: 5px;
     }
     .biography .biography__content .section_subtitle .name{
         max-width: 160px;
         overflow: hidden;
+    }
+    /*designers*/
+    .designers{
+        margin: 50px auto;
+    }
+    .designers .section_title{
+        right: 30px;
+        writing-mode: unset;
+        transform: unset;
+    }
+    .designers .designers__content{
+        padding-left: 30px;
+    }
+    .designers .designers__content .designers__item.big{
+        order: 3;
+        margin-right: 0;
     }
     /*footer*/
     .footer__menu{

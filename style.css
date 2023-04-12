@@ -521,7 +521,6 @@ body{
         justify-content: space-between;
         padding: 0 40px;
         list-style-type: none;
-        padding-inline-start: 0;
     }
     .footer__menu .footer__menu-item{
         font-size: 2.5rem;

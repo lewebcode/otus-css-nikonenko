@@ -5,6 +5,22 @@
     "prettier": "^2.8.7"
   },
   "scripts": {
-    "server": "http-server"
-  }
+    "server": "http-server",
+    "prettier": "prettier --write ./*.js"
+  },
+  "name": "otus-css-nikonenko",
+  "description": "I'm junior web developer. I'm studying frontend development. Let's show my skill)))",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewebcode/otus-css-nikonenko.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lewebcode/otus-css-nikonenko/issues"
+  },
+  "homepage": "https://github.com/lewebcode/otus-css-nikonenko#readme"
 }

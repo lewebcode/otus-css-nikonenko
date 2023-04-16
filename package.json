@@ -3,5 +3,8 @@
     "http-server": "^14.1.1",
     "lodash": "^4.17.21",
     "prettier": "^2.8.7"
+  },
+  "scripts": {
+    "server": "http-server"
   }
 }

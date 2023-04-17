@@ -257,7 +257,6 @@ body{
     text-transform: uppercase;
     margin-bottom: 0;
     line-height: 1;
-    margin-top: 23px;
     font-size: 1rem;
 }
 .designers__content-item .designers__content-text{
@@ -534,6 +533,9 @@ body{
     }
     .designers .designers__content .designers__content-item:nth-child(3) img{
         width: 100%;
+    }
+    .designers__content-item .designers__content-name{
+        margin-top: 23px;
     }
 
     /*testimonials*/

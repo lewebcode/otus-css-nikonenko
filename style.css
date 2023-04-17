@@ -250,10 +250,15 @@ body{
     max-width: 42.3%;
     overflow: hidden;
 }
+.designers__content-item .designers__content-info{
+    padding-left: 5px;
+}
 .designers__content-item .designers__content-name{
     text-transform: uppercase;
     margin-bottom: 0;
     line-height: 1;
+    margin-top: 23px;
+    font-size: 1rem;
 }
 .designers__content-item .designers__content-text{
     margin: 0;
@@ -363,7 +368,7 @@ body{
     padding-left: 0;
     line-height: 1.15;
 }
-.footer__menu{
+.footer-menu{
     display: none;
 }
 
@@ -453,7 +458,7 @@ body{
         text-align: right;
         grid-row: 1/2;
         align-self: flex-start;
-        padding-right: 30px;
+        padding-right: 35px;
         margin-top: 0;
     }
     .biography .biography__content .biography__text{
@@ -461,7 +466,7 @@ body{
         grid-row: 1/2;
         padding-left: 30px;
     }
-    .biography .biography__content .biography__text ul{
+    .biography .biography__content .biography__text .biography__text-list{
         -webkit-flex-flow: column;
         flex-flow: column;
         gap: 0;
@@ -569,7 +574,7 @@ body{
     }
     .testimonials__content-second-img{
         grid-row: 2/3;
-        margin-top: 44px;
+        margin-top: 40px;
     }
     .testimonials__content-main-img{
         display: none;
@@ -602,7 +607,7 @@ body{
         margin-top: 10px;
     }
     /*footer*/
-    .footer__menu{
+    .footer-menu{
         display: unset;
         border-top: 1px solid #000;
         -webkit-display: flex;
@@ -613,31 +618,31 @@ body{
         flex-flow: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 40px;
+        padding: 0 37px;
         margin-top: 60px;
         margin-bottom: 0;
         list-style-type: none;
     }
-    .footer__menu .footer-menu__item{
+    .footer-menu .footer-menu__item{
         font-size: 2.5rem;
         font-family: 'Butler';
         font-weight: 400;
-        padding: 15px 0;
+        padding: 19px 0;
     }
-    .footer__menu .footer-menu__item.underline{
+    .footer-menu .footer-menu__item.underline{
         position: relative;
     }
-    .footer__menu .footer-menu__item.underline::after{
+    .footer-menu .footer-menu__item.underline::after{
         content: ' ';
         position: absolute;
         width: 23px;
         background-color: #000;
         height: 2px;
         right: 0;
-        bottom: 18px;
+        bottom: 22px;
         display: block;
     }
-    .footer__menu .footer-menu__item a{
+    .footer-menu .footer-menu__item a{
         color: #000;
         text-decoration: none;
     }

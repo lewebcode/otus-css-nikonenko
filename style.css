@@ -461,7 +461,7 @@ body{
         grid-row: 1/2;
         padding-left: 30px;
     }
-    .biography .biography__content .biography__text ul{
+    .biography .biography__content .biography__text .biography__text-list{
         -webkit-flex-flow: column;
         flex-flow: column;
         gap: 0;

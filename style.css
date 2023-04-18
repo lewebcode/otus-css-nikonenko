@@ -27,6 +27,8 @@ main{
 body{
     margin: 0;
 }
+
+/*navigation*/
 .nav{
     min-height: 135px;
     -webkit-display: flex;
@@ -38,11 +40,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .nav__content{
     display: none;
 }
 
-/*navigation*/
 .nav__item{
     color:#000;
     font-weight: 400;
@@ -61,6 +63,9 @@ body{
     width: 92%;
 }
 
+.text-bold{
+    font-weight: 700;
+}
 .banner{
     min-height: 630px;
     position: relative;
@@ -98,16 +103,16 @@ body{
     margin-bottom: 70px;
 }
 
-.banner__title,.section_subtitle{
+.banner__title,.section-subtitle{
     font-family: 'Butler';
     font-weight: 400;
     font-size: 87px;
     margin-bottom: 0;
 }
-.section_subtitle{
+.section-subtitle{
     margin-top: 0;
 }
-.banner__subtitle,.section_title{
+.banner__subtitle,.section-title{
     font-weight: 700;
     font-size: 1.125rem;
 }
@@ -146,14 +151,14 @@ body{
     grid-template-columns: 1fr 50px;
     grid-template-rows: 48% 72px 1fr;
 }
-.biography .biography__content .section_title{
+.biography .biography__content .section-title{
     transform: rotate(270deg) translateY(35px);
     grid-column: 2/3;
     grid-row: 3/4;
     padding-bottom: 10px;
     align-self: end;
 }
-.biography .biography__content .section_subtitle{
+.biography .biography__content .section-subtitle{
     grid-column: 1/2;
     align-self: end;
     -webkit-display: flex;
@@ -172,10 +177,10 @@ body{
     margin-bottom: 15px;
     grid-column: 1/2;
 }
-.biography .biography__content .biography__text p{
+.biography .biography__content .biography__text .biography__text-job{
     margin: 0;
 }
-.biography .biography__content .biography__text ul{
+.biography .biography__content .biography__text .biography__text-list{
     margin: 0;
     list-style-type: none;
     padding-inline-start: 0;
@@ -205,7 +210,7 @@ body{
     margin: 165px auto;
     max-width: 1440px;
 }
-.designers .section_title{
+.designers .section-title{
     width: 85px;
     position: absolute;
     right: 25.8%;
@@ -225,7 +230,7 @@ body{
     width: 100vw;
     padding-top: 7px;
 }
-.designers .designers__content .designers__item{
+.designers .designers__content .designers__content-item{
     -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;
@@ -237,7 +242,7 @@ body{
     min-width: 265px;
     order: 2;
 }
-.designers .designers__content .designers__item.big{
+.designers .designers__content .designers__content-item.big{
     order: 1;
     margin-right: 7%;
     -webkit-align-items: center;
@@ -245,16 +250,17 @@ body{
     max-width: 42.3%;
     overflow: hidden;
 }
-.designers__item .designers-item__name{
+.designers__content-item .designers__content-info{
+    padding-left: 5px;
+}
+.designers__content-item .designers__content-name{
     text-transform: uppercase;
     margin-bottom: 0;
     line-height: 1;
+    font-size: 1rem;
 }
-.designers__item .designers-item__text{
+.designers__content-item .designers__content-text{
     margin: 0;
-}
-.designers__item .designers-item__text--bold{
-    font-weight: 700;
 }
 
 /*testimonials block*/
@@ -263,7 +269,7 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
-.testimonials .section_title{
+.testimonials .section-title{
     padding-left: 85px;
 }
 .testimonials .testimonials__content{
@@ -298,7 +304,7 @@ body{
     display: block;
     font-weight: 700;
 }
-.testimonials__content-main_img{
+.testimonials__content-main-img{
     grid-column: 2/3;
     grid-row: 1/3;
     overflow: hidden;
@@ -313,7 +319,7 @@ body{
     justify-self: center;
     margin: 0;
 }
-.testimonials__content-second_img{
+.testimonials__content-second-img{
     grid-column: 3/4;
     grid-row: 2/3;
     justify-self: center;
@@ -328,13 +334,13 @@ body{
     grid-auto-flow: column;
     grid-template-columns: repeat(2, minmax(350px, 1fr)) minmax(577px, 1fr) minmax(350px, 1fr);
 }
-.strongpoints .section_title{
+.strongpoints .section-title{
     width: 125px;
     grid-column: 2/3;
     align-self: flex-start;
     transform: rotate(270deg) translateX(-20px) translateY(50px);
 }
-.strongpoints .section_subtitle{
+.strongpoints .section-subtitle{
     align-self: end;
     grid-column: 3/4;
     padding-left: 72px;
@@ -361,7 +367,7 @@ body{
     padding-left: 0;
     line-height: 1.15;
 }
-.footer__menu{
+.footer-menu{
     display: none;
 }
 
@@ -369,7 +375,7 @@ body{
     .biography{
         margin-top: 50px;
     }
-    .biography .biography__content .section_title{
+    .biography .biography__content .section-title{
         transform: rotate(270deg) translateY(0px);
     }
     .testimonials{
@@ -381,12 +387,12 @@ body{
     .strongpoints{
         grid-template-columns: 208px repeat(3, minmax(350px, 1fr));
     }
-    .strongpoints .section_subtitle {
+    .strongpoints .section-subtitle {
         align-self: end;
         grid-column: 1/3;
         padding-left: 72px;
     }
-    .strongpoints .section_title {
+    .strongpoints .section-title {
         width: 125px;
         grid-column: 3/4;
         align-self: end;
@@ -445,13 +451,13 @@ body{
         row-gap: 30px;
         position: relative;
     }
-    .biography .biography__content .section_title{
+    .biography .biography__content .section-title{
         transform: unset;
         grid-column: 2/3;
         text-align: right;
         grid-row: 1/2;
         align-self: flex-start;
-        padding-right: 30px;
+        padding-right: 35px;
         margin-top: 0;
     }
     .biography .biography__content .biography__text{
@@ -459,7 +465,7 @@ body{
         grid-row: 1/2;
         padding-left: 30px;
     }
-    .biography .biography__content .biography__text ul{
+    .biography .biography__content .biography__text .biography__text-list{
         -webkit-flex-flow: column;
         flex-flow: column;
         gap: 0;
@@ -475,7 +481,7 @@ body{
         font-size: 1.9rem;
         line-height: 1.25;
     }
-    .biography .biography__content .section_subtitle{
+    .biography .biography__content .section-subtitle{
         grid-column: 1/3;
         align-self: flex-start;
         margin-top: 0;
@@ -485,14 +491,14 @@ body{
         justify-content: center;
         gap: 8px;
     }
-    .biography .biography__content .section_subtitle::before{
+    .biography .biography__content .section-subtitle::before{
         content:'-';
         color:#000;
         width: 25px;
         height: 5px;
         margin-right: 5px;
     }
-    .biography .biography__content .section_subtitle .name{
+    .biography .biography__content .section-subtitle .name{
         max-width: 160px;
         overflow: hidden;
     }
@@ -501,7 +507,7 @@ body{
     .designers{
         margin: 50px auto;
     }
-    .designers .section_title{
+    .designers .section-title{
         right: 35px;
         writing-mode: unset;
         transform: unset;
@@ -510,23 +516,26 @@ body{
         padding-left: 35px;
         padding-top: 95px;
     }
-    .designers .designers__content .designers__item.big{
+    .designers .designers__content .designers__content-item.big{
         order: 3;
         margin-right: 0;
     }
-    .designers .designers__content .designers__item{
+    .designers .designers__content .designers__content-item{
         gap: 2px;
     }
-    .designers .designers__content .designers__item img{
+    .designers .designers__content .designers__content-item img{
         aspect-ratio: 3/5;
         max-height: 442px;
     }
-    .designers .designers__content .designers__item:nth-child(3){
+    .designers .designers__content .designers__content-item:nth-child(3){
         align-items: end;
         min-width: 305px;
     }
-    .designers .designers__content .designers__item:nth-child(3) img{
+    .designers .designers__content .designers__content-item:nth-child(3) img{
         width: 100%;
+    }
+    .designers__content-item .designers__content-name{
+        margin-top: 23px;
     }
 
     /*testimonials*/
@@ -534,7 +543,7 @@ body{
         margin-top: 216px;
         padding: 0 30px;
     }
-    .testimonials .section_title{
+    .testimonials .section-title{
         padding-left: 0;
         text-align: right;
         padding-right: 18px;
@@ -558,18 +567,18 @@ body{
         transform: unset;
     }
     .testimonials__content-text,
-    .testimonials__content-second_img{ 
+    .testimonials__content-second-img{ 
         grid-column: 1/2;
     }
     .testimonials__content-text{
         width: 95%;
         margin-top: 85px;
     }
-    .testimonials__content-second_img{
+    .testimonials__content-second-img{
         grid-row: 2/3;
-        margin-top: 44px;
+        margin-top: 40px;
     }
-    .testimonials__content-main_img{
+    .testimonials__content-main-img{
         display: none;
     }
     
@@ -578,7 +587,7 @@ body{
         padding-left: 35px;
         gap: 0px 19px;
     }
-    .strongpoints .section_title{
+    .strongpoints .section-title{
         grid-column: 2/3;
         transform: unset;
         align-self: center;
@@ -587,7 +596,7 @@ body{
         margin-bottom: 18px;
         width: 100%;
     }
-    .strongpoints .section_subtitle{
+    .strongpoints .section-subtitle{
         padding-left: 0;
         grid-row: 2/3;
         margin-bottom: 18px;
@@ -600,7 +609,7 @@ body{
         margin-top: 10px;
     }
     /*footer*/
-    .footer__menu{
+    .footer-menu{
         display: unset;
         border-top: 1px solid #000;
         -webkit-display: flex;
@@ -611,31 +620,31 @@ body{
         flex-flow: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 40px;
+        padding: 0 37px;
         margin-top: 60px;
         margin-bottom: 0;
         list-style-type: none;
     }
-    .footer__menu .footer__menu-item{
+    .footer-menu .footer-menu__item{
         font-size: 2.5rem;
         font-family: 'Butler';
         font-weight: 400;
-        padding: 15px 0;
+        padding: 19px 0;
     }
-    .footer__menu .footer__menu-item.underline{
+    .footer-menu .footer-menu__item.underline{
         position: relative;
     }
-    .footer__menu .footer__menu-item.underline::after{
+    .footer-menu .footer-menu__item.underline::after{
         content: ' ';
         position: absolute;
         width: 23px;
         background-color: #000;
         height: 2px;
         right: 0;
-        bottom: 18px;
+        bottom: 22px;
         display: block;
     }
-    .footer__menu .footer__menu-item a{
+    .footer-menu .footer-menu__item a{
         color: #000;
         text-decoration: none;
     }

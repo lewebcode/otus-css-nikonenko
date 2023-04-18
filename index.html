@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Mod Studio</title>
 </head>
@@ -37,7 +38,7 @@
    <section id="biography" class="biography">     
         <picture class="biography__picture">
             <source srcset="img/katyamills_mobile.jpg" media="(max-width: 768px)" />
-            <img src="img/katyamills.png" alt="Katya Mills">
+            <img class="animate__animated hidden" src="img/katyamills.png" alt="Katya Mills">
           </picture>
         <div class="biography__content">
             <h2 class="section-title">Biography</h2>
@@ -89,11 +90,11 @@
         <h2 class="section-title wrapper">Testimonials</h2>    
         <div class="testimonials__content">
             <div class="testimonials__content-links">
-                <a class="testimonials__link" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Website</span>www.whitepapers.com</a>
-                <a class="testimonials__link" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a>
-                <a class="testimonials__link" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a> 
+                <a class="testimonials__link underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Website</span>www.whitepapers.com</a>
+                <a class="testimonials__link underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a>
+                <a class="testimonials__link underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a> 
             </div>
-            <div class="testimonials__content-main-img"><img src="img/office.png" alt="Office"></div>
+            <div class="testimonials__content-main-img"><img class="animate__animated hidden" src="img/office.png" alt="Office"></div>
             <blockquote class="blockquote testimonials__content-text">I just really want to do good work and work with some great people, people who challange me.</blockquote>
             <div class="testimonials__content-second-img">
                 <picture>
@@ -126,11 +127,12 @@
         <img class="strongpoints__content-item" src="img/strength2.png" alt="strength2">
    </section>
    <ul class="footer-menu">
-        <li class="footer-menu__item"><a href="#biography">B</a></li>
-        <li class="footer-menu__item"><a href="#designers">D</a></li>
-        <li class="footer-menu__item"><a href="#testimonials">T</a></li>
+        <li class="footer-menu__item underline"><a href="#biography">B</a></li>
+        <li class="footer-menu__item underline"><a href="#designers">D</a></li>
+        <li class="footer-menu__item underline"><a href="#testimonials">T</a></li>
         <li class="footer-menu__item underline"><a href="#strongpoints">S</a></li>
    </ul>
+   <script src="index.js"></script>
 </main> 
 </body>
 </html>

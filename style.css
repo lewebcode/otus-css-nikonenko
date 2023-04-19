@@ -34,28 +34,6 @@ body{
     opacity: 0;
 }
 
-.underline {
-    position: relative;
-}
- 
-.underline::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #000;
-  
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.3s, transform 0.3s;
-}
-  
-.underline:hover::after,  .underline:focus::after{
-      opacity: 1;
-      transform: translateY(0px);
-}
   
 /*navigation*/
 .nav{
@@ -361,6 +339,27 @@ body{
     text-decoration: none;
     transform-origin: top left;
 	transform: rotate(-90deg);
+}
+.testimonials__link_text_underline {
+    position: relative;
+}
+ 
+.testimonials__link_text_underline::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+}
+  
+.testimonials__link_text_underline:hover::after,  .testimonials__link_text_underline:focus::after{
+      opacity: 1;
+      transform: translateY(0px);
 }
 .testimonials__link-bold{
     display: block;

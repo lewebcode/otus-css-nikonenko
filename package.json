@@ -11,7 +11,7 @@
     "build-dev": "webpack -c webpack.config.js",
     "build-prod": "webpack -c webpack.config.prod.js",
     "start-dev": "webpack serve",
-    "start": "webpack serve --mode development -c webpack.config.js"
+    "start-prod": "webpack serve --config webpack.config.prod.js"
   },
   "devDependencies": {
     "css-loader": "^6.7.3",

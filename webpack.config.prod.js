@@ -28,9 +28,6 @@ module.exports = {
                             postcssOptions: {
                                 plugins: [
                                     "postcss-preset-env",
-                                    // "postcss-deadcss",
-                                    // "at-rule-packer",
-                                    // "postcss-import"
                                 ],
                             },
                         },

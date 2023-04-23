@@ -439,7 +439,7 @@ body{
         width: 58%;
     }
     .strongpoints{
-        grid-template-columns: 208px repeat(3, minmax(350px, 1fr));
+        grid-template-columns: 240px repeat(3, minmax(350px, 1fr));
     }
     .strongpoints .section-subtitle {
         align-self: end;

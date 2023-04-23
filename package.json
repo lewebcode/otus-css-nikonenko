@@ -8,7 +8,8 @@
   "scripts": {
     "server": "http-server",
     "prettier": "prettier --write ./*.js",
-    "build-dev": "webpack",
+    "build-dev": "webpack -c webpack.config.js",
+    "build-prod": "webpack -c webpack.config.prod.js",
     "start-dev": "webpack serve",
     "start": "webpack serve --mode development -c webpack.config.js"
   },
@@ -19,6 +20,7 @@
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
+    "sass": "^1.46.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",

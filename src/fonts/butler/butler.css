@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler UltraLight'), local('Butler-UltraLight'), url('Butlerultralight.woff2') format('woff2'), url('Butlerultralight.woff') format('woff'), url('Butlerultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Light'), local('Butler-Light'), url('Butlerlight.woff2') format('woff2'), url('Butlerlight.woff') format('woff'), url('Butlerlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler'), url('Butler.woff2') format('woff2'), url('Butler.woff') format('woff'), url('Butler.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Medium'), local('Butler-Medium'), url('Butlermedium.woff2') format('woff2'), url('Butlermedium.woff') format('woff'), url('Butlermedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Bold'), local('Butler-Bold'), url('Butlerbold.woff2') format('woff2'), url('Butlerbold.woff') format('woff'), url('Butlerbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler ExtraBold'), local('Butler-ExtraBold'), url('Butlerextrabold.woff2') format('woff2'), url('Butlerextrabold.woff') format('woff'), url('Butlerextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Butler';
+    src: local('Butler Black'), local('Butler-Black'), url('Butlerblack.woff2') format('woff2'), url('Butlerblack.woff') format('woff'), url('Butlerblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

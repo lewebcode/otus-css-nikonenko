@@ -1,5 +1,6 @@
 import "./css/style.css";
 import "./css/animate.min.css";
+import "./css/fonts.css";
 document.addEventListener("DOMContentLoaded", () => {
     function onEntry(entry) {
         entry.forEach(change => {

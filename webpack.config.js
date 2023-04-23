@@ -28,7 +28,7 @@ module.exports = {
                 use: 'html-loader'
             },
             {
-                test: /\.(png|gif)$/,
+                test: /\.(png|jpg|gif)$/,
                 type: 'asset/resource',
                 generator:  {
                     filename: 'images/[name]-[hash][ext]',

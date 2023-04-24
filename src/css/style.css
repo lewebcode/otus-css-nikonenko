@@ -182,7 +182,7 @@ body{
 .biography .biography__content .biography__text .biography__text-list{
     margin: 0;
     list-style-type: none;
-    padding-inline-start: 0;
+    padding-left: 0;
     display: flex;
     flex-flow: row wrap;
     gap: 5px;

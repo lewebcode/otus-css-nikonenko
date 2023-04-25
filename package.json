@@ -6,8 +6,10 @@
   },
   "scripts": {
     "prettier": "prettier --write ./*.js",
-    "build": "webpack -c webpack.config.prod.js",
-    "start": "webpack serve",
+    "build-dev": "webpack -c webpack.config.js",
+    "build-prod": "webpack -c webpack.config.prod.js",
+    "start-dev": "webpack serve",
+    "start-prod": "webpack serve --config webpack.config.prod.js"
   },
   "devDependencies": {
     "at-rule-packer": "^0.4.0",
@@ -17,9 +19,12 @@
     "html-webpack-plugin": "^5.5.0",
     "image-webpack-loader": "^8.1.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^8.0.0",
     "postcss": "^8.4.23",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.3",
+    "sass": "^1.46.0",
+    "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.80.0",

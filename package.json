@@ -6,7 +6,7 @@
   },
   "scripts": {
     "prettier": "prettier --write ./*.js",
-    "build": "webpack -c webpack.config.js",
+    "build": "webpack -c webpack.config.prod.js",
     "start": "webpack serve",
   },
   "devDependencies": {

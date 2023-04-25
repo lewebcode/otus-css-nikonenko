@@ -54,6 +54,7 @@ module.exports = {
         compress: false,
         open: true,
         port: 5004,
+        // static: './public',
         hot: true,
     },
 };

@@ -1,17 +1,13 @@
 {
   "dependencies": {
     "autoprefixer": "^10.4.14",
-    "http-server": "^14.1.1",
-    "lodash": "^4.17.21",
     "prettier": "^2.8.7",
     "webpack": "^5.80.0"
   },
   "scripts": {
     "prettier": "prettier --write ./*.js",
-    "build-dev": "webpack -c webpack.config.js",
-    "build-prod": "webpack -c webpack.config.prod.js",
-    "start-dev": "webpack serve",
-    "start-prod": "webpack serve --config webpack.config.prod.js"
+    "build": "webpack -c webpack.config.js",
+    "start": "webpack serve",
   },
   "devDependencies": {
     "at-rule-packer": "^0.4.0",

@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "http-server": "^14.1.1",
-    "lodash": "^4.17.21",
     "prettier": "^2.8.7",
     "webpack": "^5.80.0"
   },
@@ -15,7 +13,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
-    "css-minimizer-webpack-plugin": "^4.2.2",
+    "css-minimizer-webpack-plugin": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",

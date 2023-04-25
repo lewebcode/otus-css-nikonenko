@@ -1,52 +1,59 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCss = require("mini-css-extract-plugin");
 
 module.exports = {
-    mode: 'development',
-    entry: {
-        main: path.resolve(__dirname, './src/index.js'),
-    },
+    mode: "development",
+    target: 'web',
+    devtool: 'source-map',
+    entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: '[name].[hash:8].js',
+        path: path.resolve(__dirname, 'public'),
         clean: true,
+        filename: "main.js",
+        assetModuleFilename: 'assets/[name][ext]',
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './src/index.html'), // шаблон
-            filename: 'index.html', // название выходного файла
-        }),
-    ],
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', "css-loader"],
-            },
+                test: /\.html$/i,
+                loader: "html-loader",
+              },
+              {
+                test: /\.(c|sa|sc)ss$/i,
+                use: [
+                    MiniCss.loader, 
+                    "css-loader", 
+                    "sass-loader"
+                ],
+              },
             {
-                test: /\.html$/,
-                use: 'html-loader'
-            },
+                test: /\.(jpeg|jpg|png|svg|gif)$/i,
+                type: 'asset/resource'
+            }, 
             {
-                test: /\.(png|jpg|gif)$/,
-                type: 'asset/resource',
-                generator:  {
-                    filename: 'images/[name]-[hash][ext]',
-                }
-            },
-            {
-                test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-                type: 'asset/resource',
-                generator:  {
-                    filename: 'fonts/[name]-[hash][ext]',
+                test: /\.(ttf|woff2?)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "fonts/[name].[ext]"
                 }
             }
-        ]
+        ],
     },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "src", "index.html")
+        }),
+        new MiniCss({
+            filename: "style.css",
+          })
+    ],
+
     devServer: {
         compress: false,
         open: true,
-        port: 3000,
+        port: 5004,
         hot: true,
-    }
-}
+    },
+};

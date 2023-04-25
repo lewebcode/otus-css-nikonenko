@@ -23,8 +23,7 @@ module.exports = {
                 test: /\.(c|sa|sc)ss$/i,
                 use: [
                     MiniCss.loader, 
-                    "css-loader", 
-                    "sass-loader"
+                    "css-loader",
                 ],
               },
             {

@@ -4,7 +4,6 @@
     "webpack": "^5.80.0"
   },
   "scripts": {
-    "server": "http-server",
     "prettier": "prettier --write ./*.js",
     "build-dev": "webpack -c webpack.config.js",
     "build-prod": "webpack -c webpack.config.prod.js",

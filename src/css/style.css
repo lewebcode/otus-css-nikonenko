@@ -335,22 +335,7 @@
 }
 
 @media all and (max-width:767px){
-    /*banner*/
-    .banner{
-        max-width: 100%;
-        display: flex;
-        flex-flow: column-reverse;
-        gap: 45px;
-    }
-    .banner img,.banner .banner__content{
-        position: unset;
-    }
-    .banner .banner__content{
-        transform: unset;
-        width: 100%;
-        padding: 26px 0;
-    }
-    .banner-title{
+    .banner .title{
         font-size: 70px;
     }
 

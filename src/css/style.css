@@ -29,8 +29,7 @@
 .blockquote{
     font-family: 'Butler';
     font-size: 2rem;
-    margin: 0 0 35px 0;
-    width: 92%;
+    width: 98%;
 }
 .banner{
     min-height: 630px;
@@ -54,14 +53,24 @@
     color: #636363;
 }
 .biography-content .blockquote{
-    margin: 55px auto 35px;
+    margin: 50px auto 35px;
     font-size: 1.9rem;
     line-height: 1.25;
 }
 .biography-content .title{
     font-size: 78px;
 }
-
+.biography-content .title::before{
+    content:'-';
+    color:#000;
+    width: 25px;
+    height: 5px;
+    margin-right: 5px;
+}
+.biography-content .title .name{
+    max-width: 160px;
+    overflow: hidden;
+}
 /*designers block*/
 .designers{
     position: relative;
@@ -413,6 +422,7 @@
     .blockquote{
         font-size: 2rem;
         margin: 0 0 35px 0;
+        width: 92%;
     }
     .biography-content{
         grid-template-columns: 1fr 50px;

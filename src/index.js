@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function onEntry(entry) {
         entry.forEach(change => {
           if (change.isIntersecting) {
-            change.target.classList.remove('hidden');
+            change.target.classList.remove('opacity-0');
             change.target.classList.add('animate__fadeInLeft');
           }
         });

@@ -82,7 +82,13 @@
     font-size: 1rem;
 }
 /*adaptive*/
-
+.designer-item{
+    max-width: 21.5%;
+    min-width: 265px;
+}
+.designer-big{
+    
+}
 .designer-picture{
     aspect-ratio: 3/5;
     height: 100%;

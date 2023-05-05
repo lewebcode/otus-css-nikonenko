@@ -73,17 +73,19 @@
 }
 /*designers block*/
 #designers{
-    margin: 165px auto;
+    margin: 50px auto;
     max-width: 1440px;
 }
+
 .designer{
     line-height: 1;
     font-size: 1rem;
 }
 /*adaptive*/
 
-.designers .designers__content .designers__content-item img{
+.designer-picture{
     aspect-ratio: 3/5;
+    height: 100%;
     max-height: 442px;
 }
 
@@ -236,11 +238,7 @@
 }
 
 @media all and (max-width:767px){
-    /*designers*/
-    #designers{
-        margin: 50px auto;
-    }
-
+   
     /*testimonials*/
     .testimonials{
         margin-top: 216px;
@@ -380,6 +378,13 @@
         width: 14px;
         background-color: #000;
         margin-bottom: 30px;
+    }
+    #designers{
+        margin: 165px auto; 
+    }
+    .designer-picture{
+        aspect-ratio: unset;
+        max-height: unset;
     }
 }
 

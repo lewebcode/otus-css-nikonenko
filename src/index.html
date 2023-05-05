@@ -22,7 +22,7 @@
 </script>
 <main class="mx-auto my-0 overflow-hidden">
     <header>
-        <nav class="hidden md:flex items-center justify-center relative h-36 nav">
+        <nav class="hidden md:flex items-center justify-center relative h-32 pb-1 nav">
             <button type="button" role="button">
                 <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="34" y2="0.5" stroke="black"/>
@@ -30,7 +30,7 @@
                     <line y1="15.5" x2="34" y2="15.5" stroke="black"/>
                  </svg>
             </button>
-            <div class="absolute w-48 z-10 top-36 flex flex-col items-center bg-white nav-content">
+            <div class="absolute w-48 z-10 top-full flex flex-col items-center bg-white nav-content">
                 <a class="text-center text-black py-2.5 w-full border-b border-solid divide-neutral-600" href="#biography">Biography</a>
                 <a class="text-center text-black py-2.5 w-full border-b border-solid divide-neutral-600" href="#designers">Designers</a>
                 <a class="text-center text-black py-2.5 w-full border-b border-solid divide-neutral-600" href="#testimonials">Testimonials</a>
@@ -39,11 +39,11 @@
         </nav>
     </header>
 
-   <section class="banner">
-        <img src="img/modstuido.jpg" alt="Mod Studio">
-        <div class="banner__content">
-            <h1 class="banner__title">Mod Studio</h1>
-            <h2 class="banner__subtitle">Modern Web Studio</h2>
+   <section class="banner relative mx-auto mt-2">
+        <img class="absolute z-1 bottom-0" src="img/modstuido.jpg" alt="Mod Studio">
+        <div class="absolute z-2 top-1/2 left-1/2 w-1/2 bg-white mx-auto text-center py-15 -translate-y-1/2 -translate-x-1/2">
+            <h1 class="px-4 mt-20 mb-5 title">Mod Studio</h1>
+            <h2 class="mb-14 subtitle">Modern Web Studio</h2>
         </div>
    </section>
 
@@ -53,8 +53,8 @@
             <img class="animate__animated opacity-0" src="img/katyamills.jpg" alt="Katya Mills">
           </picture>
         <div class="biography__content">
-            <h2 class="section-title">Biography</h2>
-            <h3 class="section-subtitle"><span class="name">Katya</span>Mills</h3>
+            <h2 class="subtitle">Biography</h2>
+            <h3 class="title"><span class="name">Katya</span>Mills</h3>
             <div class="biography__text">
                 <p class="biography__text-job">Art Director</p>
                 <ul class="biography__text-list">
@@ -69,7 +69,7 @@
    </section>
 
    <section id="designers" class="designers">
-        <h2 class="section-title">Designers</h2>
+        <h2 class="title">Designers</h2>
         <div class="designers__content">
             <article class="designers__content-item designers__content-item_image_big">
                 <img src="img/jesswonder.jpg" alt="Jess Wonder">
@@ -99,7 +99,7 @@
    </section>
 
    <section id="testimonials" class="testimonials">
-        <h2 class="section-title wrapper">Testimonials</h2>    
+        <h2 class="title wrapper">Testimonials</h2>    
         <div class="testimonials__content">
             <div class="testimonials__content-links">
                 <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Website</span>www.whitepapers.com</a>
@@ -118,8 +118,8 @@
    </section>
 
    <section id="strongpoints" class="strongpoints">
-        <h2 class="section-title">Strong points</h2>
-        <h3 class="section-subtitle">Strengths</h3>
+        <h2 class="title">Strong points</h2>
+        <h3 class="subtitle">Strengths</h3>
         <img class="strongpoints__content-item" src="img/strength1.jpg" alt="strength1">
         <img class="strongpoints__content-item" src="img/strength2.jpg" alt="strength2">
         <ul class="strongpoints__content-item strongpoints__list">

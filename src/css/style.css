@@ -32,51 +32,22 @@
 
 .banner{
     min-height: 630px;
-    position: relative;
     max-width: 1065px;
-    margin: 0 auto;
-}
-
-.banner .banner__content{
-    background-color: #fff;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    text-align: center;
-    width: 53%;
-    padding: 15px 0;
 }
 
 .banner img{
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
     min-height: 494px;
 }
 
-.banner .banner__title{
-    margin-bottom: 20px;
-    margin-top: 110px;
-    padding: 0px 15px;
-}
-
-.banner__subtitle{
-    margin-bottom: 70px;
-}
-
-.banner__title,.section-subtitle{
+.title{
     font-family: 'Butler';
     font-weight: 400;
     font-size: 87px;
     margin-bottom: 0;
 }
-.section-subtitle{
+
+.subtitle{
     margin-top: 0;
-}
-.banner__subtitle,.section-title{
     font-weight: 700;
     font-size: 1.125rem;
 }
@@ -379,7 +350,7 @@
         width: 100%;
         padding: 26px 0;
     }
-    .banner__title{
+    .banner-title{
         font-size: 70px;
     }
 

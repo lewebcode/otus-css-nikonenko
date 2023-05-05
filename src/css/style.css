@@ -8,50 +8,12 @@
     scroll-behavior: smooth;
 }
 
-main{
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-body{
-    margin: 0;
-}
-
-.hidden{
-    opacity: 0;
-}
-
-  
-/*navigation*/
-.nav{
-    min-height: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.nav__button{
-    background: transparent;
-    outline: none;
-    border: unset;
-}
-
-.nav__content{
-    position: absolute;
-    background-color: #fff;
-    top: 100%;
-    width: 190px;
-    align-items: center;
-    z-index: 10;
-    transition: 0.5s ease-in-out;
-    flex-flow: column;
-    display: flex;
+.nav-content{
     transform: scaleY(0);
     transform-origin: 0 0;
 }
 
-.nav:hover .nav__content{
+.nav:hover .nav-content{
     transform: scaleY(1);
 }
 
@@ -411,10 +373,6 @@ body{
 }
 
 @media all and (max-width:767px){
-    .nav{
-        display: none;
-    }
-
     /*banner*/
     .banner{
         max-width: 100%;

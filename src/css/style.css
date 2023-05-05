@@ -72,56 +72,21 @@
     overflow: hidden;
 }
 /*designers block*/
-.designers{
-    position: relative;
+#designers{
     margin: 165px auto;
     max-width: 1440px;
 }
-.designers .subtitle{
-    width: 85px;
-    position: absolute;
-    right: 25.8%;
-    writing-mode: rl-tb;
-    transform: rotate(270deg) translateX(-15px);
-}
-.designers .designers__content{
-    display: flex;
-    align-items: flex-end;
-    gap: 15px;
-    flex-flow: row nowrap;
-    width: 100vw;
-    padding-top: 7px;
-}
-.designers .designers__content .designers__content-item{
-    display: flex;
-    flex-flow: column;
-    gap: 7px;
-    max-width: 21.5%;
-    min-width: 265px;
-    order: 2;
-}
-.designers .designers__content .designers__content-item_image_big{
-    order: 1;
-    margin-right: 7%;
-    align-items: center;
-    max-width: 42.3%;
-    overflow: hidden;
-}
-.designers__content-item .designers__content-item__info{
-    padding-left: 5px;
-}
-.designers__content-item .designers__content-item__name{
-    text-transform: uppercase;
-    margin-bottom: 0;
+.designer{
     line-height: 1;
     font-size: 1rem;
 }
-.designers__content-item .designers__content-item__text{
-    margin: 0;
+/*adaptive*/
+
+.designers .designers__content .designers__content-item img{
+    aspect-ratio: 3/5;
+    max-height: 442px;
 }
-.designers__content-item__category{
-    font-weight: 700;
-}
+
 /*testimonials block*/
 .testimonials{
     padding-top: 85px;
@@ -272,38 +237,8 @@
 
 @media all and (max-width:767px){
     /*designers*/
-    .designers{
+    #designers{
         margin: 50px auto;
-    }
-    .designers .subtitle{
-        right: 35px;
-        writing-mode: unset;
-        transform: unset;
-    }
-    .designers .designers__content{
-        padding-left: 35px;
-        padding-top: 95px;
-    }
-    .designers .designers__content .designers__content-item_image_big{
-        order: 3;
-        margin-right: 0;
-    }
-    .designers .designers__content .designers__content-item{
-        gap: 2px;
-    }
-    .designers .designers__content .designers__content-item img{
-        aspect-ratio: 3/5;
-        max-height: 442px;
-    }
-    .designers .designers__content .designers__content-item:nth-child(3){
-        align-items: end;
-        min-width: 305px;
-    }
-    .designers .designers__content .designers__content-item:nth-child(3) img{
-        width: 100%;
-    }
-    .designers__content-item .designers__content-item__name{
-        margin-top: 23px;
     }
 
     /*testimonials*/

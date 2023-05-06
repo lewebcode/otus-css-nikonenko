@@ -3,3 +3,8 @@ node_modules
 dist
 prod
 public
+package-lock.json
+package.json
+prettier.config.js
+webpack.config.js
+webpack.config.prod.js

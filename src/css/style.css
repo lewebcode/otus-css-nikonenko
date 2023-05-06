@@ -129,27 +129,11 @@
 }
 
 /*footer*/
-
-.footer-menu .footer-menu__item{
+.footer-item{
     font-size: 2.5rem;
     font-family: 'Butler';
-    font-weight: 400;
-    padding: 19px 0;
 }
 
-.footer-menu .footer-menu__item_text_underline{
-    position: relative;
-}
-.footer-menu .footer-menu__item_text_underline::after{
-    content: ' ';
-    position: absolute;
-    width: 23px;
-    background-color: #000;
-    height: 2px;
-    right: 0;
-    bottom: 22px;
-    display: block;
-}
 .footer-menu .footer-menu__item a{
     color: #000;
     text-decoration: none;
@@ -228,6 +212,7 @@
         aspect-ratio: unset;
     }
     #strongpoints{
+        margin-top: 107px;
         grid-template-columns: repeat(2, minmax(350px, 1fr)) minmax(577px, 1fr) minmax(350px, 1fr);
     }
 }

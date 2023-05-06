@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{let e=new IntersectionObserver((function(e){e.forEach((e=>{e.isIntersecting&&(e.target.classList.remove("opacity-0"),e.target.classList.add("animate__fadeInLeft"))}))}),{threshold:[.5]}),t=document.querySelectorAll(".animate__animated");for(let n of t)e.observe(n)}));

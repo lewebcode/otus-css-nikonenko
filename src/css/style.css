@@ -101,7 +101,7 @@
 }
 .testimonials-content{
     grid-template-columns: 1fr;
-    grid-template-rows: 36% 1fr;
+    grid-template-rows: auto;
     min-height: 760px;
 }
 .testimonials-links{
@@ -127,48 +127,32 @@
     padding-left: 0;
     line-height: 1.15;
 }
-.footer-menu{
-    display: none;
+
+/*footer*/
+
+.footer-menu .footer-menu__item{
+    font-size: 2.5rem;
+    font-family: 'Butler';
+    font-weight: 400;
+    padding: 19px 0;
 }
 
-@media all and (max-width:767px){
-    /*footer*/
-    .footer-menu{
-        display: unset;
-        border-top: 1px solid #000;
-        display: flex;
-        flex-flow: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 37px;
-        margin-top: 60px;
-        margin-bottom: 0;
-        list-style-type: none;
-    }
-    .footer-menu .footer-menu__item{
-        font-size: 2.5rem;
-        font-family: 'Butler';
-        font-weight: 400;
-        padding: 19px 0;
-    }
-
-    .footer-menu .footer-menu__item_text_underline{
-        position: relative;
-    }
-    .footer-menu .footer-menu__item_text_underline::after{
-        content: ' ';
-        position: absolute;
-        width: 23px;
-        background-color: #000;
-        height: 2px;
-        right: 0;
-        bottom: 22px;
-        display: block;
-    }
-    .footer-menu .footer-menu__item a{
-        color: #000;
-        text-decoration: none;
-   }
+.footer-menu .footer-menu__item_text_underline{
+    position: relative;
+}
+.footer-menu .footer-menu__item_text_underline::after{
+    content: ' ';
+    position: absolute;
+    width: 23px;
+    background-color: #000;
+    height: 2px;
+    right: 0;
+    bottom: 22px;
+    display: block;
+}
+.footer-menu .footer-menu__item a{
+    color: #000;
+    text-decoration: none;
 }
 
 @media all and (min-width:768px){
@@ -216,6 +200,7 @@
         margin-top: 0;
     }
     .testimonials-content{
+        grid-template-rows: 36% 1fr;
         grid-template-columns: 52px 52.5% 45.5%;
     }  
     .testimonials-links{

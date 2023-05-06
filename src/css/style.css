@@ -203,7 +203,7 @@
         margin-bottom: 30px;
     }
     .designer-item:nth-child(3){
-        min-width: unset;
+        min-width: 265px;;
     }
     .designer-picture{
         aspect-ratio: unset;
@@ -243,6 +243,7 @@
         aspect-ratio: unset;
     }
     #strongpoints{
-        grid-template-columns: repeat(4, minmax(350px, 1fr));
+        grid-template-columns: repeat(2, minmax(350px, 1fr)) minmax(577px, 1fr) minmax(350px, 1fr);
     }
 }
+

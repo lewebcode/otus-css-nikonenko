@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Mod Studio</title> 
 </head>
-<body>
+<body class="m-0">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W70BQMS0JZ"></script>
 <script>
@@ -21,9 +21,9 @@
 
   gtag('config', 'G-W70BQMS0JZ');
 </script>
-<main>
+<main class="mx-auto my-0 overflow-hidden">
     <header class="d-none d-md-block">
-        <nav class="navbar justify-content-center align-items-center">
+        <nav class="navbar p-0 justify-content-center align-items-center">
             <div class="dropdown-center">
                 <button class="btn" id="headerButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@
                         <line y1="15.5" x2="34" y2="15.5" stroke="black"/>
                      </svg>
                 </button>
-                <ul class="dropdown-menu text-center" aria-labelledby="headerButton">
+                <ul class="dropdown-menu text-center p-0" aria-labelledby="headerButton">
                   <li><a class="dropdown-item pt-2 pb-2" href="#biography">Biography</a></li>
                   <li><a class="dropdown-item pt-2 pb-2" href="#designers">Designers</a></li>
                   <li><a class="dropdown-item pt-2 pb-2" href="#testimonials">Testimonials</a></li>
@@ -42,15 +42,15 @@
         </nav>
     </header>
 
-   <section class="banner container-xl">
-        <img src="img/modstuido.jpg" alt="Mod Studio">
-        <div class="banner__content">
-            <h1 class="banner__title">Mod Studio</h1>
-            <h2 class="banner__subtitle">Modern Web Studio</h2>
+   <section class="banner d-flex flex-col-reverse d-md-block position-relative mx-auto my-0">
+        <img class="position-absolute z-1 bottom-0" src="img/modstuido.jpg" alt="Mod Studio">
+        <div class="banner-box z-2 position-absolute translate-middle text-center mx-auto m-0 py-3 bg-white">
+            <h1 class="banner-title py-1 mb-4">Mod Studio</h1>
+            <h2 class="banner-subtitle">Modern Web Studio</h2>
         </div>
    </section>
 
-   <section id="biography" class="biography">     
+   <section id="biography" class="biography d-flex mx-auto">     
         <picture class="biography__picture">
             <source srcset="img/katyamills_mobile.jpg" media="(max-width: 768px)" />
             <img class="animate__animated hidden" src="img/katyamills.jpg" alt="Katya Mills">
@@ -101,8 +101,8 @@
         </div>
    </section>
 
-   <section id="testimonials" class="testimonials">
-        <h2 class="section-title wrapper">Testimonials</h2>    
+   <section id="testimonials" class="testimonials mx-auto">
+        <h2 class="section-title mx-auto">Testimonials</h2>    
         <div class="testimonials__content">
             <div class="testimonials__content-links">
                 <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Website</span>www.whitepapers.com</a>

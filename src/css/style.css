@@ -8,22 +8,24 @@
     --bs-body-font-family: "Roboto";
     --bs-btn-focus-box-shadow: unset;
 }
-main{
-    margin: 0 auto;
-    overflow: hidden;
-}
-body{
-    margin: 0;
-}
 [aria-expanded="true"],
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background: transparent;
     outline: none;
     border: unset; 
 }
-.wrapper{
-    margin: 0 auto;
-    max-width: 1170px;
+.banner-title,.section-subtitle{
+    font-family: 'Butler';
+    font-weight: 400;
+    font-size: 87px;
+    margin-bottom: 0;
+}
+.section-subtitle{
+    margin-top: 0;
+}
+.banner-subtitle,.section-title{
+    font-weight: 700;
+    font-size: 1.125rem;
 }
 .blockquote{
     font-family: 'Butler';
@@ -36,9 +38,11 @@ body{
 .navbar{
     min-height: 135px;
 }
+.dropdown-center{
+    bottom: 7px;
+}
 .dropdown-menu{
     width: 190px;
-    padding: 0;
     border-color: transparent!important;
     border-radius: unset!important;
 }
@@ -54,64 +58,29 @@ body{
 /*banner*/
 .banner{
     min-height: 630px;
-    position: relative;
     max-width: 1065px;
-    margin: 0 auto;
 }
-
-.banner .banner__content{
-    background-color: #fff;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    text-align: center;
-    width: 53%;
-    padding: 15px 0;
-}
-
 .banner img{
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
     min-height: 494px;
 }
-
-.banner .banner__title{
-    margin-bottom: 20px;
+.banner-box{
+    top: 50%;
+    left: 50%;
+    padding: 0 45px;
+}
+.banner .banner-title{
     margin-top: 110px;
-    padding: 0px 15px;
 }
-
-.banner__subtitle{
+.banner-subtitle{
     margin-bottom: 70px;
-}
-
-.banner__title,.section-subtitle{
-    font-family: 'Butler';
-    font-weight: 400;
-    font-size: 87px;
-    margin-bottom: 0;
-}
-.section-subtitle{
-    margin-top: 0;
-}
-.banner__subtitle,.section-title{
-    font-weight: 700;
-    font-size: 1.125rem;
 }
 
 /*biography block*/
 .biography{
     margin-top: 135px;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 50px;
 }
 .biography .biography__picture{
@@ -229,10 +198,10 @@ body{
 .testimonials{
     padding-top: 85px;
     max-width: 1440px;
-    margin: 0 auto;
 }
 .testimonials .section-title{
     padding-left: 85px;
+    max-width: 1170px;
 }
 .testimonials .testimonials__content{
     margin: 40px auto 0 auto;
@@ -386,26 +355,18 @@ body{
 }
 
 @media all and (max-width:767px){
-    .nav{
-        display: none;
-    }
-
     /*banner*/
     .banner{
-        max-width: 100%;
-        display: flex;
-        flex-flow: column-reverse;
         gap: 45px;
     }
-    .banner img,.banner .banner__content{
-        position: unset;
-    }
-    .banner .banner__content{
-        transform: unset;
+    .banner .banner-box{
+        transform: unset!important;
         width: 100%;
+        top:0;
+        left:0;
         padding: 26px 0;
     }
-    .banner__title{
+    .banner-title{
         font-size: 70px;
     }
 

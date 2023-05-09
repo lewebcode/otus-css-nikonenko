@@ -23,12 +23,8 @@ body{
 
   
 /*navigation*/
-.nav{
+.navbar{
     min-height: 135px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .nav__button{
@@ -38,21 +34,12 @@ body{
 }
 
 .nav__content{
-    position: absolute;
     background-color: #fff;
-    top: 100%;
     width: 190px;
     align-items: center;
     z-index: 10;
-    transition: 0.5s ease-in-out;
     flex-flow: column;
     display: flex;
-    transform: scaleY(0);
-    transform-origin: 0 0;
-}
-
-.nav:hover .nav__content{
-    transform: scaleY(1);
 }
 
 .nav__item{

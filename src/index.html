@@ -23,19 +23,17 @@
 </script>
 <main>
     <header>
-        <nav class="nav">
-            <button class="nav__button" type="button" role="button">
-                <svg width="34" height="16" viewBox="0 0 34 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="0.5" x2="34" y2="0.5" stroke="black"/>
-                    <line y1="7.5" x2="34" y2="7.5" stroke="black"/>
-                    <line y1="15.5" x2="34" y2="15.5" stroke="black"/>
-                 </svg>
-            </button>
-            <div class="nav__content">
-                <a class="nav__item" href="#biography">Biography</a>
-                <a class="nav__item" href="#designers">Designers</a>
-                <a class="nav__item" href="#testimonials">Testimonials</a>
-                <a class="nav__item" href="#strongpoints">Strong points</a>
+        <nav class="navbar d-none d-md-flex flex-row justify-content-center align-items-center">
+            <div class="dropdown-center">
+                <button class="btn dropdown-toggle" id="headerButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Кнопка выпадающего списка
+                </button>
+                <ul class="dropdown-menu w-100 text-center" aria-labelledby="headerButton">
+                  <li><a class="dropdown-item" href="#biography">Biography</a></li>
+                  <li><a class="dropdown-item" href="#designers">Designers</a></li>
+                  <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                  <li><a class="dropdown-item" href="#strongpoints">Strong point</a></li>
+                </ul>
             </div>
         </nav>
     </header>

@@ -1,62 +1,30 @@
 :root{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     scroll-behavior: smooth;
+    --bs-body-font-family: "Roboto";
+    --bs-btn-focus-box-shadow: unset;
 }
-
 main{
     margin: 0 auto;
     overflow: hidden;
 }
-
 body{
     margin: 0;
 }
-
-.hidden{
-    opacity: 0;
-}
-
-  
-/*navigation*/
-.navbar{
-    min-height: 135px;
-}
-
-.nav__button{
+[aria-expanded="true"],
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
     background: transparent;
     outline: none;
-    border: unset;
+    border: unset; 
 }
-
-.nav__content{
-    background-color: #fff;
-    width: 190px;
-    align-items: center;
-    z-index: 10;
-    flex-flow: column;
-    display: flex;
-}
-
-.nav__item{
-    color: #000;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px 0;
-    border-bottom: 1px solid gray;
-    width: 100%;
-    text-align: center;
-}
-
 .wrapper{
     margin: 0 auto;
     max-width: 1170px;
 }
-
 .blockquote{
     font-family: 'Butler';
     font-size: 2rem;
@@ -64,6 +32,26 @@ body{
     width: 92%;
 }
 
+/*navigation*/
+.navbar{
+    min-height: 135px;
+}
+.dropdown-menu{
+    width: 190px;
+    padding: 0;
+    border-color: transparent!important;
+    border-radius: unset!important;
+}
+.dropdown-menu[data-bs-popper]{
+    left: -110%;
+    top: 220%;
+    border-radius: unset;
+}
+.dropdown-item{
+    border-bottom: 1px solid gray;
+}
+
+/*banner*/
 .banner{
     min-height: 630px;
     position: relative;

@@ -42,7 +42,7 @@
         </nav>
     </header>
 
-   <section class="banner d-flex flex-col-reverse d-md-block position-relative mx-auto my-0">
+   <section class="banner d-flex flex-column-reverse d-md-block position-relative mx-auto my-0">
         <img class="position-absolute z-1 bottom-0" src="img/modstuido.jpg" alt="Mod Studio">
         <div class="banner-box z-2 position-absolute translate-middle text-center mx-auto m-0 py-3 bg-white">
             <h1 class="banner-title py-1 mb-4">Mod Studio</h1>
@@ -50,17 +50,17 @@
         </div>
    </section>
 
-   <section id="biography" class="biography d-flex mx-auto">     
+   <section id="biography" class="biography d-flex flex-column-reverse flex-md-row mx-auto justify-content-between">     
         <picture class="biography__picture">
             <source srcset="img/katyamills_mobile.jpg" media="(max-width: 768px)" />
             <img class="animate__animated hidden" src="img/katyamills.jpg" alt="Katya Mills">
           </picture>
         <div class="biography__content">
             <h2 class="section-title">Biography</h2>
-            <h3 class="section-subtitle"><span class="name">Katya</span>Mills</h3>
+            <h3 class="section-subtitle d-flex flex-row flex-md-column"><span class="name">Katya</span>Mills</h3>
             <div class="biography__text">
-                <p class="biography__text-job">Art Director</p>
-                <ul class="biography__text-list">
+                <p class="m-0">Art Director</p>
+                <ul class="biography__text-list m-0 px-0 d-flex flex-column flex-md-row flex-md-wrap">
                     <li>Scenography /</li>
                     <li>Styling /</li>
                     <li>Creative Photography /</li>
@@ -73,29 +73,29 @@
 
    <section id="designers" class="designers">
         <h2 class="section-title">Designers</h2>
-        <div class="designers__content">
-            <article class="designers__content-item designers__content-item_image_big">
+        <div class="designers__content d-flex align-items-end flex-row w-100 pt-2 gap-3">
+            <article class="d-flex flex-column align-items-center designers__content-item designers__content-item_image_big overflow-hidden">
                 <img src="img/jesswonder.jpg" alt="Jess Wonder">
-                <div class="designers__content-item__info">
-                    <h3 class="designers__content-item__name">Jess Wonder</h3>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">From/</span> Be more flower</p>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">Skills/</span> Design Strategy / Marketing</p>
+                <div class="designers__content-item__info mt-3">
+                    <h3 class="designers__content-item__name text-uppercase">Jess Wonder</h3>
+                    <p class="m-0"><span class="fw-bold">From/</span> Be more flower</p>
+                    <p class="m-0"><span class="fw-bold">Skills/</span> Design Strategy / Marketing</p>
                 </div>
             </article>
-            <article class="designers__content-item">
+            <article class="d-flex flex-column designers__content-item">
                 <img src="img/kameronclein.jpg" alt="Kameron Clein">
-                <div class="designers__content-item__info">
-                    <h3 class="designers__content-item__name">Kameron Clein</h3>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">From/</span>Be more flower</p>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">Skills/</span> Design Strategy / Marketing</p>
+                <div class="designers__content-item__info mt-3">
+                    <h3 class="designers__content-item__name text-uppercase">Kameron Clein</h3>
+                    <p class="m-0"><span class="fw-bold">From/</span>Be more flower</p>
+                    <p class="m-0"><span class="fw-bold">Skills/</span> Design Strategy / Marketing</p>
                 </div>
             </article>
-            <article class="designers__content-item">
+            <article class="d-flex flex-column designers__content-item">
                 <img src="img/louissered.jpg" alt="Louisse Red">
-                <div class="designers__content-item__info">
-                    <h3 class="designers__content-item__name">Louisse Red</h3>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">From/</span> Be more flower</p>
-                    <p class="designers__content-item__text"><span class="designers__content-item__category">Skills/</span> Design Strategy / Marketing</p>
+                <div class="designers__content-item__info mt-3">
+                    <h3 class="designers__content-item__name text-uppercase">Louisse Red</h3>
+                    <p class="m-0"><span class="fw-bold">From/</span> Be more flower</p>
+                    <p class="m-0"><span class="fw-bold">Skills/</span> Design Strategy / Marketing</p>
                 </div>
             </article>
         </div>
@@ -105,12 +105,12 @@
         <h2 class="section-title mx-auto">Testimonials</h2>    
         <div class="testimonials__content">
             <div class="testimonials__content-links">
-                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Website</span>www.whitepapers.com</a>
-                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a>
-                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="testimonials__link-bold">Creativity</span>www.whitepapers.com</a> 
+                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="d-block fw-bold">Website</span>www.whitepapers.com</a>
+                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="d-block fw-bold">Creativity</span>www.whitepapers.com</a>
+                <a class="testimonials__link testimonials__link_text_underline" href="http://www.whitepapers.com"><span class="d-block fw-bold">Creativity</span>www.whitepapers.com</a> 
             </div>
-            <div class="testimonials__content-main-img"><img class="animate__animated hidden" src="img/office.jpg" alt="Office"></div>
-            <blockquote class="blockquote testimonials__content-text">I just really want to do good work and work with some great people, people who challange me.</blockquote>
+            <div class="testimonials__content-main-img overflow-hidden"><img class="animate__animated hidden" src="img/office.jpg" alt="Office"></div>
+            <blockquote class="blockquote testimonials__content-text text-center">I just really want to do good work and work with some great people, people who challange me.</blockquote>
             <div class="testimonials__content-second-img">
                 <picture>
                     <source srcset="img/testimonials_mobile.jpg" media="(max-width: 768px)" />
@@ -125,7 +125,7 @@
         <h3 class="section-subtitle">Strengths</h3>
         <img class="strongpoints__content-item" src="img/strength1.jpg" alt="strength1">
         <img class="strongpoints__content-item" src="img/strength2.jpg" alt="strength2">
-        <ul class="strongpoints__content-item strongpoints__list">
+        <ul class="strongpoints__content-item strongpoints__list d-flex flex-column justify-content-center">
             <li class="strongpoints__list-item">Interiors</li>
             <li class="strongpoints__list-item">Outdoors</li>
             <li class="strongpoints__list-item">Portraits</li>
@@ -141,8 +141,8 @@
          </ul>
         <img class="strongpoints__content-item" src="img/strength2.jpg" alt="strength2">
    </section>
-   <footer>
-       <ul class="footer-menu">
+   <footer class="d-md-none">
+       <ul class="footer-menu d-flex flex-row align-items-center justify-content-between mb-0">
             <li class="footer-menu__item"><a href="#biography">B</a></li>
             <li class="footer-menu__item"><a href="#designers">D</a></li>
             <li class="footer-menu__item"><a href="#testimonials">T</a></li>
